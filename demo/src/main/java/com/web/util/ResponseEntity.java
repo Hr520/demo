@@ -10,6 +10,13 @@ public class ResponseEntity<T> {
     private String state;
     private String msg;
     private T data;
+    private Long time;
+    public Long getTime(){return time;}
+    public ResponseEntity<T> setTime(Long time){
+        this.time=time;
+        return this;
+    }
+
 
 
 	public String getMsg() {

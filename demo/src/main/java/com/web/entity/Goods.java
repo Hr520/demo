@@ -1,5 +1,6 @@
 package com.web.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -32,6 +33,7 @@ import java.math.BigDecimal;
 @Data
 @TableName("goods")
 public class Goods {
+    @TableId
     private Long uuid;
     private String GoodsName;
     private Integer GoodsParentId;

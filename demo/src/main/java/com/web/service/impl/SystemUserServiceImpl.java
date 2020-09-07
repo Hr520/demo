@@ -19,6 +19,7 @@ public class SystemUserServiceImpl implements SystemUserService {
         QueryWrapper<SystemUser> queryWrapper=new QueryWrapper<>();
         queryWrapper.eq("system_name",systemUser.getSystemName());
         queryWrapper.eq("password_login",systemUser.getPasswordLogin());
+        queryWrapper.select("id,system_name,code,status,add_time,remark,nick_name,imag_url");
         return userMapper.selectOne(queryWrapper);
     }
 }

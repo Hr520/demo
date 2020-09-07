@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08945dac-764d-44b6-8207-1469543e87f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/MenuApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/RoleApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/UserRoleApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/UserRoleMenuApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/RoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/mapper/UserRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/UserRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/UserRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/vo/MenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/mycommon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/base/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/base/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/LoginApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/api/LoginApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/system/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/system/SecCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/controller/system/SecCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/filter/AdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/filter/AdminInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/filter/LoginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/filter/LoginConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/interceptor/shiro/ShiroConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/interceptor/shiro/ShiroRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/SystemUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/service/impl/SystemUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/util/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/util/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/web/util/ResponseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/web/util/ResponseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h5MHUgqHbjZpBX94jeavonJh5l" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo/src/main/java/com/web/entity" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_code\demo\demo\src\main\java\com\web\entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="LoginApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.web.controller.api.LoginApi" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.web.controller.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/templates/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo/templates/view/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.web.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginApi" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.home.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08945dac-764d-44b6-8207-1469543e87f6" name="Default Changelist" comment="" />
+      <created>1599296411819</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599296411819</updated>
+      <workItem from="1599296413189" duration="2579000" />
+      <workItem from="1599375474829" duration="9593000" />
+      <workItem from="1599454467682" duration="9596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1599473510853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599473510853" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599297099119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599297099119" />
+    <state width="1493" height="398" key="GridCell.Tab.0.bottom" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.0.center" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.0.left" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.0.right" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.1.bottom" timestamp="1599457251157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599457251157" />
+    <state width="1493" height="398" key="GridCell.Tab.1.center" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.1.left" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.1.right" timestamp="1599457251156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599457251156" />
+    <state width="1493" height="398" key="GridCell.Tab.2.bottom" timestamp="1599457251157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599457251157" />
+    <state width="1493" height="398" key="GridCell.Tab.2.center" timestamp="1599457251157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1599457251157" />
+    <state width="1493" height="398" key="GridCell.Tab.2.left" timestamp="1599457251157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1599457251157" />
+    <state width="1493" height="398" key="GridCell.Tab.2.right" timestamp="1599457251157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="398" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1599457251157" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599380522883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599380522883" />
+  </component>
+</project>

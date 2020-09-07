@@ -43,5 +43,8 @@ public class Const {
 
 	/**角色：课程负责人 、老师 **/
 	public static final String ROLE_ADMIN_TEACHER = "4";
+	public static final String CACHE_LOGIN_USER_INFO = "LOGIN_USER_INFO_"; // 登录用户信息缓存到redis;
+	public  static final String CACHE_LOGIN_USER_ID_SESSION_ID="LOGIN_USER_ID_SESSION_ID";//sessionID对应的用户ID
+
 
 }

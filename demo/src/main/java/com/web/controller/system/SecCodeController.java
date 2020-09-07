@@ -1,9 +1,6 @@
 package com.web.controller.system;
 
 import com.web.util.Const;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
-import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,6 +8,7 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -30,8 +28,7 @@ public class SecCodeController {
 	@RequestMapping
 	public  void  getcode(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		response.setContentType("image/jpeg");
-		Subject currentUser = SecurityUtils.getSubject();
-		Session session = currentUser.getSession();
+		HttpSession session=request.getSession();
 		int width=70;
 		int height=23;
 		//设置浏览器不要缓存此图片

@@ -2,14 +2,12 @@ package com.web.filter;
 
 import com.web.entity.SystemUser;
 import com.web.util.Const;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
-import org.apache.shiro.subject.Subject;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class AdminInterceptor implements HandlerInterceptor {
@@ -20,8 +18,7 @@ public class AdminInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         try {
             //统一拦截（查询当前session是否存在user）(这里user会在每次登陆成功后，写入session)
-            Subject currentUser = SecurityUtils.getSubject();
-            Session session = currentUser.getSession();
+            HttpSession session=request.getSession();
             SystemUser user=(SystemUser)session.getAttribute(Const.SESSION_USER);
             if(user!=null){
                 return true;
