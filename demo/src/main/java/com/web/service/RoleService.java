@@ -8,4 +8,6 @@ public interface RoleService {
     boolean insertRole(Role role);
 
     List<Role> selectRoleList(Integer id);
+
+    List<Role> roleList(Integer userId);
 }

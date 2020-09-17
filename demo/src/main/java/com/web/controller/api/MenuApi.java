@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import vo.MenuVo;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -20,7 +21,7 @@ public class MenuApi extends BaseController {
 
     @PostMapping("/MenuList")
     public ResponseEntity<?> MenuList() {
-        List<MenuVo> list = menuService.cacheAllMenuList();
+        List<MenuVo> list = new ArrayList<>();
         return new ResponseEntity<>().setState(General.SUCCESS).setData(list).setMsg("数据获取成功");
     }
 }

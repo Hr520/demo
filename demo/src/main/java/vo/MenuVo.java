@@ -12,6 +12,6 @@ public class MenuVo {
     private  String MenuUrl;
     private  Integer Pid;
     private  Integer MenuOrder;
-    private  String menu_pic;
+    private  String MenuPic;
     private List<Menu> subMenu;
 }

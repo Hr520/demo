@@ -34,6 +34,6 @@ public class UserRoleMenuApi extends BaseController {
         List<UserRole> list=userRoleService.getUserRoleListByUserId(systemUser.getId());
         List<Integer> roleIdList=list.stream().map(UserRole::getRoleId).distinct().collect(Collectors.toList());
         List<RoleMenu> roleMenus=userRoleMenuService.getUserRoleMenuListInRoleId(roleIdList);
-        return new ResponseEntity<>().setState(General.SUCCESS).setData(roleIdList).setMsg("数据获取成功");
+        return new ResponseEntity<>().setState(General.SUCCESS).setData(roleMenus).setMsg("数据获取成功");
     }
 }

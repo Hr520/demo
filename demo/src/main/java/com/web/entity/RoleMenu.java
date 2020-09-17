@@ -7,7 +7,6 @@ import lombok.Data;
 @TableName("sys_role_menu")
 public class RoleMenu {
     private Integer Id;
-    private Integer  RoleID;// 角色名称
-    private  Integer  AddTime;
-    private  String MenuId;
+    private Integer  RoleId;// 角色名称
+    private  Integer MenuId;
 }

@@ -19,7 +19,7 @@ public class AdminInterceptor implements HandlerInterceptor {
         try {
             //统一拦截（查询当前session是否存在user）(这里user会在每次登陆成功后，写入session)
             HttpSession session=request.getSession();
-            SystemUser user=(SystemUser)session.getAttribute(Const.SESSION_USER);
+            SystemUser user=(SystemUser)session.getAttribute(session.getId());
             if(user!=null){
                 return true;
             }

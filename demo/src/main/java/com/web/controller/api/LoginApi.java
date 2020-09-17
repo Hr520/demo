@@ -52,32 +52,30 @@ public class LoginApi extends BaseController {
             }
             result = "success";
             msg = "成功";
-            //判断当前用户是否已经登录
-            boolean flags = Login_user.containsKey(systemUser.getSystemName());
-            // 获取已经登陆的sessionId
-            boolean log = false;// 判断该sessionid是否已经登陆
             String sessionId = session.getId().toString();
-            for (Map.Entry<String, String> entry : Login_user.entrySet()) {
-                if (entry.getValue().equals(sessionId)) {
-                    log = true;
+            //判断当前用户是否已经登录
+            if (Login_user!=null || !Login_user.equals("") || Login_user.size()>0){
+                boolean flags = Login_user.containsKey(systemUser.getSystemName());
+                // 获取已经登陆的sessionId
+                boolean log = false;// 判断该sessionid是否已经登陆
+                for (Map.Entry<String, String> entry : Login_user.entrySet()) {
+                    if (entry.getValue().equals(sessionId)) {
+                        log = true;
+                    }
                 }
-            }
-            if (flags) {
-                if (log) {
+                if (flags) {
+                    if (log) {
+                    } else {
+                        Login_Out_user.put(systemUser.getSystemName(),
+                                Login_user.get(systemUser.getSystemName()).toString());
+                    }
+                    Login_user.put(systemUser.getSystemName(), sessionId);
                 } else {
-                    Login_Out_user.put(systemUser.getSystemName(),
-                            Login_user.get(systemUser.getSystemName()).toString());
+                    Login_user.put(systemUser.getSystemName(), sessionId);
                 }
-                Login_user.put(systemUser.getSystemName(), sessionId);
-            } else {
+            }else {
                 Login_user.put(systemUser.getSystemName(), sessionId);
             }
-            //先判断redis中是否已经存在
-            if (redisUtil.hasKey(Const.CACHE_LOGIN_USER_INFO+systemUser.getId())){
-                //先删除
-                redisUtil.del(Const.CACHE_LOGIN_USER_INFO+systemUser.getId());
-            }
-            redisUtil.set(Const.CACHE_LOGIN_USER_INFO+systemUser.getId(), JSON.toJSONString(systemUser));
             session.setAttribute(sessionId,systemUser);
         } else {
             result = "codeerror"; // 验证码输入有误

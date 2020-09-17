@@ -1,5 +1,7 @@
 package com.web.controller.api;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.web.base.BaseController;
 import com.web.entity.Goods;
 import com.web.service.GoodsService;
@@ -39,4 +41,5 @@ public class GoodsApi extends BaseController {
         List<Goods> goodsList=goodsService.GoodsList();
         return new ResponseEntity<>().setData(goodsList).setState(General.SUCCESS).setMsg("数据获取成功");
     }
+
 }

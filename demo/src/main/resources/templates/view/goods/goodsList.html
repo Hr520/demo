@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <base th:href="${#request.getContextPath()}+'/'">
+    <title>实验分组列表</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="/dist/css/skins/_all-skins.css">
+    <!-- TABLE style -->
+    <link rel="stylesheet" href="/assets/css/backend.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/plugins/datatables/dataTables.bootstrap.css">
+    <style type="text/css">
+        /* DataTables禁用排序后，屏蔽排序图标占用的位置 */
+        table.dataTable thead > tr > th {
+            padding-right: 8px;
+        }
+        .table {
+            table-layout: fixed;/*列宽由表格宽度和列宽度设定 */
+        }
+        /*td文字过长省略号表示 */
+        .table tr td {
+            text-overflow: ellipsis; /* for IE */
+            -moz-text-overflow: ellipsis; /* for Firefox,mozilla */
+            overflow: hidden;
+            white-space: nowrap;/* 不自动换行 */
+        }
+    </style>
+</head>
+<body class="hold-transition skin-green-light sidebar-mini">
+    <div class="wrapper">
+        <!-- head and menu -->
+        <div th:replace="/mycommon :: Header"></div>
+        <div th:replace="/mycommon :: NavMenu"></div>
+        <!-- head and menu -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    货品管理  <small>货品列表</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="main/index"><i class="fa fa-dashboard"></i>主页</a></li>
+                    <li><a href="javascript:;">货品管理</a></li>
+                    <li class="active">货品列表</li>
+                </ol>
+            </section>
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <form role="form" class="form-horizontal" id="queryForm" method="post">
+                                    <button type="button" class="btn btn-primary" data-btn-type="addGoodsType" title="添加货品分类">
+                                        <i class="fa fa-plus"></i> 添加
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <table id="example" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                                    <col width="5%">
+                                    <col width="8%">
+                                    <col width="8%">
+                                    <col width="5%">
+                                    <col width="5%" th:if="roleId==4">
+                                    <col width="5%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="15%">
+
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>货品名称</th>
+                                        <th>货品类别</th>
+                                        <th>定价</th>
+                                        <th>原价</th>
+                                        <th>成本价</th>
+                                        <th>入库时间</th>
+                                        <th>入库日期</th>
+                                        <th>有效日期</th>
+                                        <th>商品编码</th>
+                                        <th>过期状态</th>
+                                        <th>更新时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr th:each="goods:${goodsListPage.records}">
+                                                <td th:text="${goodsStat.index+1}"></td>
+                                                <td th:text="${goods.GoodsName}"></td>
+                                                <td th:text="${goods.GoodsParentId}"></td>
+                                                <td style="text-align: left;" th:text="${goods.Pricing}"></td>
+                                                <td th:text="${goods.Price}"></td>
+                                                <td th:text="${goods.Cost}"></td>
+                                                <td th:text="${goods.AddTime}"></td>
+                                                <td th:text="${goods.AddDate}"></td>
+                                                <td th:text="${goods.ValidTime}"></td>
+                                                <td th:text="${goods.Coding}"></td>
+                                                <td th:text="${goods.ExpiredStatus==0?'过期':'有效'}"></td>
+                                                <td th:text="${goods.UpdateTime}"></td>
+                                                <td>
+                                                    <a href="/goodsApi/${list.id}" class="btn btn-xs btn-success btn-editone" title="下架">
+                                                        &nbsp;<i class="fa fa-pencil"></i>&nbsp;
+                                                    </a>
+                                                    <a href="javascript:;" class="btn btn-danger btn-delone btn-xs" data-btn-type="delGroup" data-id="${list.id}" title="删除实验分组">
+                                                        &nbsp;<i class="fa fa-trash"></i>&nbsp;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </section>
+        </div>
+        <!--Footer-part-->
+        <footer class="main-footer" th:replace="/mycommon :: Navfooter">
+        </footer>
+        <!--end-Footer-part-->
+    </div>
+    <!-- jQuery 2.2.3 -->
+    <script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- DataTables -->
+    <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="/plugins/fastclick/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/dist/js/app.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/dist/js/demo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var table = $('#example').DataTable({
+                "autoWidth": false,
+                "ordering": false,
+                "columnDefs": [
+                    { "searchable": false, "orderable": false, "targets": [0] },
+                ],
+                "language": {
+                    "url": '/plugins/datatables/Chinese.json'
+                }
+            });
+            // 添加序号
+            table.on('order.dt search.dt', function() {
+                table.column(0, {
+                    search : 'applied',
+                    order : 'applied'
+                }).nodes().each(function(cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }).draw();
+        });
+    </script>
+</body>
+</html>

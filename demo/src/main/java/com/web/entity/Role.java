@@ -14,7 +14,7 @@ public class Role{
 	private String RoleName;// 角色名称
 	private  String AddTime;
 	private  String Remark;
-	private  String ImagUrl;
+	private  String ImgUrl;
 
 
 }

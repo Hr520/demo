@@ -27,7 +27,10 @@ public class Const {
 	public static final String NO_INTERCEPTOR_PATH = ".*/((login)|(assets)|(bootstrap)|(build)|(dist)|(plugins)|(upload)|(logout)|(code)|(Jquery)|(api)|(main)|(interface)|(weixin)|(api)).*"; // 不对匹配该值的访问路径拦截（正则）
 	public static ApplicationContext WEB_APP_CONTEXT = null; // 该值会在web容器启动时由WebAppContextListener初始化
 	public  static  final  String White_IP=".*((localhost)|(127.0.0.1)|(172.16.3)|(210.42.109.72)|(te.m.hust.edu.cn)).*";
-	
+
+	public  static final String CACHE_SESSION_USER_MENU_="SESSION_USER_MENU_";//SESSION缓存用户菜单
+
+
 	/**启用、有效**/
 	public static final int STATUS_ENABLED = 1;
 	/**禁用、无效**/
@@ -43,8 +46,10 @@ public class Const {
 
 	/**角色：课程负责人 、老师 **/
 	public static final String ROLE_ADMIN_TEACHER = "4";
-	public static final String CACHE_LOGIN_USER_INFO = "LOGIN_USER_INFO_"; // 登录用户信息缓存到redis;
-	public  static final String CACHE_LOGIN_USER_ID_SESSION_ID="LOGIN_USER_ID_SESSION_ID";//sessionID对应的用户ID
+
+	/** REDIS 缓存key **/
+	public  static final String CACHE_REDIS_USER_MENU_="USER_MENU_";//缓存用户菜单
+
 
 
 }
