@@ -11,6 +11,7 @@ import com.web.util.DateUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import vo.MenuVo;
 
 import javax.annotation.Resource;
@@ -68,7 +69,6 @@ public class LoginController extends BaseController {
         Integer UserId = systemUser.getId();
         //判断当前用户的菜单数据是否已经缓存
         Object object = redisUtil.get(Const.CACHE_REDIS_USER_MENU_ + UserId);
-        System.out.println("进入index接口方法");
         List<MenuVo> menuVos = new ArrayList<>();
         //获取用户角色
         Role role=new Role();
@@ -121,6 +121,20 @@ public class LoginController extends BaseController {
     @GetMapping(value = "/erro")
     public String erro() {
         return "/view/erro";
+    }
+    @GetMapping("/logout")
+    public String logout(){
+        HttpSession  session=getSession();
+        session.removeAttribute("menuVos");
+        session.removeAttribute("role");
+        session.removeAttribute("today");
+        SystemUser systemUser=(SystemUser) session.getAttribute(session.getId());
+        Login_user.remove(systemUser.getSystemName());
+        session.removeAttribute(session.getId());
+        session.removeAttribute("menuVos");
+        session.removeAttribute("menuVos");
+        session.removeAttribute("menuVos");
+        return "/view/login";
     }
 
 }

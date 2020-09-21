@@ -56,7 +56,6 @@
                             <ul class="dropdown-menu">
                                 <li class="user-header">
                                     <img th:src="@{/dist/img/{imageName}(imageName=${session.role.ImgUrl})}" class="img-circle" alt="User Image">
-
                                     <p th:text="${session.role.RoleName}">
                                         <small th:text="${session.role.RoleRemark}"></small>
                                     </p>

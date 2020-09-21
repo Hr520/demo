@@ -109,7 +109,7 @@
                     </ul>
                 </li>
                 <li class="dropdown messages-menu">
-                    <a href="javascript:void(0)" onclick="loginout()"  class="dropdown-toggle" data-toggle="dropdown" style="color: white;">
+                    <a href="javascript:if(confirm('确定要退出吗?'))location='<%=basePath%>logout'"  class="dropdown-toggle" data-toggle="dropdown" style="color: white;">
                         <i class="glyphicon glyphicon-off"></i>
                         <span class="hidden-xs">退出</span>
                     </a>

@@ -373,5 +373,9 @@ public class DateUtil {
 		}
 		 return UNIX;
 	}
+
+	public static long getNowUnixTime(){
+		return System.currentTimeMillis()/1000;
+	}
 	
 }

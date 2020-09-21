@@ -6,5 +6,5 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.web.entity.Goods;
 
 public interface GoodsMapper extends BaseMapper<Goods> {
-    IPage<Goods> selectPageVo(Page<Goods> goodsPage, Integer state);
+    IPage<Goods> selectPageVo(Page<Goods> goodsPage, Integer state,String GoodsName);
 }

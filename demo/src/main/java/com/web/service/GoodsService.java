@@ -12,5 +12,11 @@ public interface GoodsService {
 
     List<Goods> GoodsList();
 
-    IPage<Goods> GoodsListPage(Page<Goods> goodsPage, Integer state);
+    IPage<Goods> GoodsListPage(Page<Goods> goodsPage, Integer state,String extra_search);
+
+    int getGoodsNameValid(Goods goods);
+
+    boolean deleteGoods(Long uuid);
+
+    int getCoding(Goods goods);
 }

@@ -46,6 +46,10 @@ public class General {
 	// sign
 	public static String SIGN = "JJST_WL_SIGNOUTH";
 
+	public  static final Integer STATUS_EFFECTIVE=1;//状态有效
+	public  static final Integer STATUS_INVALID=0;//状态无效
+
+
 	/**
 	 * 
 	 * 百度语音配置
