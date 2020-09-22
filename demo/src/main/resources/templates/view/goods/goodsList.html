@@ -173,16 +173,16 @@
                             } else {
                                 arr = $.parseJSON(data);//将json字符串转化为了一个Object对象
                             }
-                            console.log("============数据==========")
-                            console.log(arr)
+                           /* console.log("============数据==========")
+                            console.log(arr)*/
                             var returnData = {};
                             //returnData.draw = arr.data.pagination.pageCount;//这里直接自行返回了draw计数器,应该由后台返回，没什么卵用！
                             returnData.recordsTotal = arr.total;//totalCount指的是总记录数
                             returnData.recordsFiltered = arr.total;//后台不实现过滤功能,全部的记录数都需输出到前端，记录数为总数
                             returnData.data = arr.records;//返回汽车列表
-                            console.log("======returnData.data=======")
+                       /*     console.log("======returnData.data=======")
                             console.log(returnData.recordsTotal)
-                            console.log(returnData.recordsFiltered)
+                            console.log(returnData.recordsFiltered)*/
                             callback(returnData);//这个别忘了！！！
                         },
                         error: function(XMLHttpRequest, textStatus, errorThrown) {

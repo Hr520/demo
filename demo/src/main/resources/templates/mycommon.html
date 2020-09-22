@@ -70,10 +70,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown messages-menu">
-                            <a href="javascript:void(0)" onclick="loginout()"  class="dropdown-toggle" data-toggle="dropdown" style="color: white;">
+                        <li class="dropdown">
+                            <a href="javascript:if(confirm('确定要退出吗?'))window.location.href='logout'"   style="color: white;">
                                 <i class="glyphicon glyphicon-off"></i>
-                                <span class="hidden-xs">退出</span>
+                                <span class="hidden-xs">退出s</span>
                             </a>
                         </li>
                     </ul>
@@ -195,10 +195,6 @@
         document.body.removeChild(myForm);  // 提交后移除创建的form
 
     }
-    function loginout(){
-        if(confirm('确定要退出吗?')){
-            location.href="<%=basePath%>logout";
-        }
-    }
+
 </script>
 </html>
